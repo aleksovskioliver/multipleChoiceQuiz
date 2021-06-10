@@ -17,3 +17,22 @@ C:\Users\Filip Simonov\Desktop\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGa
 C:\Users\Filip Simonov\Desktop\QuizGame\QuizGame\obj\Debug\net5.0-windows\ref\QuizGame.dll
 C:\Users\Filip Simonov\Desktop\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.pdb
 C:\Users\Filip Simonov\Desktop\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.genruntimeconfig.cache
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.exe
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.deps.json
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.runtimeconfig.json
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.runtimeconfig.dev.json
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.dll
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\ref\QuizGame.dll
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.pdb
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.csprojAssemblyReference.cache
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.Form1.resources
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.Properties.Resources.resources
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.csproj.GenerateResource.cache
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.AssemblyInfoInputs.cache
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.AssemblyInfo.cs
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.csproj.CoreCompileInputs.cache
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.dll
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\ref\QuizGame.dll
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.pdb
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.genruntimeconfig.cache

@@ -29,12 +29,15 @@ namespace QuizGame
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btn1 = new System.Windows.Forms.Button();
             this.btn2 = new System.Windows.Forms.Button();
             this.btn3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btn4 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pbTimer = new System.Windows.Forms.ProgressBar();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -71,16 +74,16 @@ namespace QuizGame
             this.btn3.UseVisualStyleBackColor = true;
             this.btn3.Click += new System.EventHandler(this.checkAnswer);
             // 
-            // button4
+            // btn4
             // 
-            this.button4.Location = new System.Drawing.Point(286, 538);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(266, 56);
-            this.button4.TabIndex = 4;
-            this.button4.Tag = "4";
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.checkAnswer);
+            this.btn4.Location = new System.Drawing.Point(286, 538);
+            this.btn4.Name = "btn4";
+            this.btn4.Size = new System.Drawing.Size(266, 56);
+            this.btn4.TabIndex = 4;
+            this.btn4.Tag = "4";
+            this.btn4.Text = "btn4";
+            this.btn4.UseVisualStyleBackColor = true;
+            this.btn4.Click += new System.EventHandler(this.checkAnswer);
             // 
             // label1
             // 
@@ -102,14 +105,26 @@ namespace QuizGame
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // pbTimer
+            // 
+            this.pbTimer.Location = new System.Drawing.Point(13, 617);
+            this.pbTimer.Name = "pbTimer";
+            this.pbTimer.Size = new System.Drawing.Size(539, 29);
+            this.pbTimer.TabIndex = 7;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 606);
+            this.ClientSize = new System.Drawing.Size(564, 664);
+            this.Controls.Add(this.pbTimer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.btn4);
             this.Controls.Add(this.btn3);
             this.Controls.Add(this.btn2);
             this.Controls.Add(this.btn1);
@@ -125,9 +140,11 @@ namespace QuizGame
         private System.Windows.Forms.Button btn1;
         private System.Windows.Forms.Button btn2;
         private System.Windows.Forms.Button btn3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btn4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ProgressBar pbTimer;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
