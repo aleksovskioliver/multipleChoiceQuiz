@@ -15,6 +15,7 @@ namespace QuizGame
         int correctAnswer;
         int questionNumber = 1;
         int totalQuestions;
+        int timeLeft;
 
         public Form1()
         {
@@ -26,29 +27,33 @@ namespace QuizGame
         {
             if (questionNumber > 12)
             {
-                showMessageBoxForEnd("Честитки ! Победивте !");
+                showMessageBoxForEnd("Congratulation ! You won !");
             }
             askQuestion(questionNumber);
+            timer1.Start();
+            timeLeft = 30;
             pbTimer.Maximum = 30;
             pbTimer.Value = 30;
         }
         private void checkAnswer(object sender, EventArgs e)
         {
-            var senderObject = (Button)sender;
-            int buttonTag = Convert.ToInt32(senderObject.Tag);
+            
+                var senderObject = (Button)sender;
+                int buttonTag = Convert.ToInt32(senderObject.Tag);
 
-            if (buttonTag == correctAnswer)
-            {
-                questionNumber++;
-                this.init();
+                if (buttonTag == correctAnswer)
+                {
+                    questionNumber++;
+                    this.init();
 
-            }
-            else{
-                questionNumber = 1;
-                showMessageBoxForEnd("Погрешен одговор");
+                }
+                else
+                {
+                    questionNumber = 1;
+                    showMessageBoxForEnd("Wrong answer!");
 
-            }
-
+                }
+            
         }
         private void askQuestion(int num)
         {
@@ -178,7 +183,9 @@ namespace QuizGame
         }
         private void showMessageBoxForEnd(string description)
         {
-            DialogResult dr = MessageBox.Show(description, "GameOver", MessageBoxButtons.YesNo);
+            timer1.Stop();
+            DialogResult dr = MessageBox.Show(description, "Game Over", MessageBoxButtons.YesNo);
+            
             if (dr == DialogResult.Yes)
             {
                 questionNumber = 1;
@@ -192,7 +199,14 @@ namespace QuizGame
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            
+            timeLeft -= 1;
+            pbTimer.Value = timeLeft;
+            if (timeLeft <= 0)
+            {
+                showMessageBoxForEnd("You ran out of time!");
+            }
         }
+
+
     }
 }

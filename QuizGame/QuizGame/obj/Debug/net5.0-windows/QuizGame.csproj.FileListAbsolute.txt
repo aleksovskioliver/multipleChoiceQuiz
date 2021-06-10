@@ -25,7 +25,6 @@ C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\n
 C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\ref\QuizGame.dll
 C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\bin\Debug\net5.0-windows\QuizGame.pdb
 C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.csprojAssemblyReference.cache
-C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.Form1.resources
 C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.Properties.Resources.resources
 C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.csproj.GenerateResource.cache
 C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.GeneratedMSBuildEditorConfig.editorconfig
@@ -55,3 +54,4 @@ C:\Users\Filip Simonov\Desktop\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\ne
 C:\Users\Filip Simonov\Desktop\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\ref\QuizGame.dll
 C:\Users\Filip Simonov\Desktop\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.pdb
 C:\Users\Filip Simonov\Desktop\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.genruntimeconfig.cache
+C:\Users\aleks\Documents\GitHub\multipleChoiceQuiz\QuizGame\QuizGame\obj\Debug\net5.0-windows\QuizGame.Form1.resources

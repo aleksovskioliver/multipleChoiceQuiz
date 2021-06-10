@@ -38,12 +38,14 @@ namespace QuizGame
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pbTimer = new System.Windows.Forms.ProgressBar();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.panel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn1
             // 
-            this.btn1.Location = new System.Drawing.Point(12, 455);
+            this.btn1.Location = new System.Drawing.Point(0, 28);
             this.btn1.Name = "btn1";
             this.btn1.Size = new System.Drawing.Size(268, 56);
             this.btn1.TabIndex = 1;
@@ -54,7 +56,7 @@ namespace QuizGame
             // 
             // btn2
             // 
-            this.btn2.Location = new System.Drawing.Point(286, 455);
+            this.btn2.Location = new System.Drawing.Point(274, 28);
             this.btn2.Name = "btn2";
             this.btn2.Size = new System.Drawing.Size(266, 56);
             this.btn2.TabIndex = 2;
@@ -65,7 +67,7 @@ namespace QuizGame
             // 
             // btn3
             // 
-            this.btn3.Location = new System.Drawing.Point(12, 538);
+            this.btn3.Location = new System.Drawing.Point(0, 104);
             this.btn3.Name = "btn3";
             this.btn3.Size = new System.Drawing.Size(268, 56);
             this.btn3.TabIndex = 3;
@@ -76,7 +78,7 @@ namespace QuizGame
             // 
             // btn4
             // 
-            this.btn4.Location = new System.Drawing.Point(286, 538);
+            this.btn4.Location = new System.Drawing.Point(274, 104);
             this.btn4.Name = "btn4";
             this.btn4.Size = new System.Drawing.Size(266, 56);
             this.btn4.TabIndex = 4;
@@ -88,11 +90,11 @@ namespace QuizGame
             // label1
             // 
             this.label1.Font = new System.Drawing.Font("Arial", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(12, 379);
+            this.label1.Location = new System.Drawing.Point(19, 368);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(533, 61);
             this.label1.TabIndex = 5;
-            this.label1.Text = "Кој е играчот на сликата?";
+            this.label1.Text = "Who is the player on the picture?";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBox1
@@ -107,30 +109,41 @@ namespace QuizGame
             // 
             // pbTimer
             // 
-            this.pbTimer.Location = new System.Drawing.Point(13, 617);
+            this.pbTimer.Location = new System.Drawing.Point(12, 620);
             this.pbTimer.Name = "pbTimer";
-            this.pbTimer.Size = new System.Drawing.Size(539, 29);
+            this.pbTimer.Size = new System.Drawing.Size(540, 33);
             this.pbTimer.TabIndex = 7;
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // panel1
+            // 
+            this.panel1.Controls.Add(this.btn2);
+            this.panel1.Controls.Add(this.btn1);
+            this.panel1.Controls.Add(this.btn3);
+            this.panel1.Controls.Add(this.btn4);
+            this.panel1.Location = new System.Drawing.Point(12, 413);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(540, 186);
+            this.panel1.TabIndex = 8;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 664);
+            this.ClientSize = new System.Drawing.Size(560, 680);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.pbTimer);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btn4);
-            this.Controls.Add(this.btn3);
-            this.Controls.Add(this.btn2);
-            this.Controls.Add(this.btn1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "Form1";
-            this.Click += new System.EventHandler(this.checkAnswer);
+            this.Text = "Guess the player";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -145,6 +158,7 @@ namespace QuizGame
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.ProgressBar pbTimer;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Panel panel1;
     }
 }
 
