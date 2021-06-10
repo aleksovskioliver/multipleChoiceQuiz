@@ -14,8 +14,6 @@ namespace QuizGame
     {
         int correctAnswer;
         int questionNumber = 1;
-        int score;
-        int percentage;
         int totalQuestions;
 
         public Form1()
@@ -26,6 +24,10 @@ namespace QuizGame
         }
         private void init()
         {
+            if (questionNumber > 12)
+            {
+                showMessageBoxForEnd("Честитки ! Победивте !");
+            }
             askQuestion(questionNumber);
             pbTimer.Maximum = 30;
             pbTimer.Value = 30;
@@ -39,6 +41,11 @@ namespace QuizGame
             {
                 questionNumber++;
                 this.init();
+
+            }
+            else{
+                questionNumber = 1;
+                showMessageBoxForEnd("Погрешен одговор");
 
             }
 
@@ -174,6 +181,7 @@ namespace QuizGame
             DialogResult dr = MessageBox.Show(description, "GameOver", MessageBoxButtons.YesNo);
             if (dr == DialogResult.Yes)
             {
+                questionNumber = 1;
                 this.init();
             }
             else
