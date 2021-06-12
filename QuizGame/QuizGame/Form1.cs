@@ -16,6 +16,8 @@ namespace QuizGame
         int questionNumber = 1;
         int totalQuestions;
         int timeLeft;
+        int score;
+        int percentage;
 
         public Form1()
         {
@@ -43,9 +45,9 @@ namespace QuizGame
 
                 if (buttonTag == correctAnswer)
                 {
-                    questionNumber++;
-                    this.init();
-
+                     questionNumber++;
+                score++;
+                     this.init();
                 }
                 else
                 {
@@ -184,11 +186,16 @@ namespace QuizGame
         private void showMessageBoxForEnd(string description)
         {
             timer1.Stop();
-            DialogResult dr = MessageBox.Show(description, "Game Over", MessageBoxButtons.YesNo);
+            percentage = (int)Math.Round((double)(100 * score) / totalQuestions);
+
+            DialogResult dr = MessageBox.Show(description + Environment.NewLine +
+                "You have answered " + score + " questions correcly" + Environment.NewLine + 
+                "Your total percentage is " + percentage + " %" + Environment.NewLine, "Game Over", MessageBoxButtons.YesNo);
             
             if (dr == DialogResult.Yes)
-            {
+            { 
                 questionNumber = 1;
+                score = 0;
                 this.init();
             }
             else
@@ -206,7 +213,5 @@ namespace QuizGame
                 showMessageBoxForEnd("You ran out of time!");
             }
         }
-
-
     }
 }
